@@ -2,8 +2,6 @@
 
 package main
 
-import "fmt"
-
 func romanToInt(s string) (res int) {
 	mp := map[uint8]int{
 		'I': 1,
@@ -30,8 +28,4 @@ func romanToInt(s string) (res int) {
 		res += val
 	}
 	return
-}
-
-func main() {
-	fmt.Println(romanToInt("IV"))
 }
